@@ -11,7 +11,7 @@ body {
 
 .container {
     display: grid;
-    grid-template: 1fr 5fr / 335px 5fr 1fr;
+    grid-template: 1fr 5fr / 300px 5fr 1fr;
 }
 
 /*sidebar*/
@@ -23,12 +23,14 @@ body {
     color: white;
 }
 
-.sidebar h1 {
+.sidebar p {
     display: flex;
     align-items: center;
     gap: 10px;
     padding-top: 10px;
     padding-bottom: 15px;
+    font-size: 27px;
+    font-weight: 700;
     
 }
 
@@ -41,7 +43,8 @@ body {
 .sidebar-links {
     display: flex;
     flex-direction: column;
-    font-size: 22px;
+    gap: 20px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -62,8 +65,8 @@ body {
 .sidebar-tools {
     display: flex;
     flex-direction: column;
-    gap: 15px;
- 
+    gap: 25px;
+    
 }
 
 /*heading*/
@@ -73,11 +76,12 @@ body {
     box-shadow: 5px 5px 5px rgb(168, 168, 168) ;
 }
 
+/*top heading*/
 .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 25px 40px;
 }
 
 .top svg {
@@ -110,6 +114,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    padding-right: 15px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -121,3 +126,5 @@ body {
 .top-right img{
     width: 45px;
 }
+
+/*bottom heading*/
