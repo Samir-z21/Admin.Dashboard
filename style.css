@@ -6,6 +6,7 @@ body {
     height: 100vh;
     font-family: 'Roboto', sans-serif;
     background-color: rgb(231,229,228);
+    overflow-y: hidden;
     
 } 
 
@@ -89,16 +90,13 @@ body {
     padding: 25px 45px 0px;
 }
 
-.search  {
-    padding-top: 5px;
-}
-
 .top svg {
     cursor: pointer;
 }
 .search {
     display: flex;
     gap: 20px;
+    padding-top: 5px;
 }
 
 .search input {
@@ -107,10 +105,11 @@ body {
     width: 700px;
     height: 35px;
     border-radius: 20px;
+    padding-left: 20px;
 }
 
 .search input:focus {
-    border: 1px solid  rgb(8,76,97) ;
+    outline: 2px solid  rgb(8,76,97) ;
 }
 
 .top-right {
@@ -191,6 +190,7 @@ body {
 /*Main*/
 .main {
     overflow: auto;
+    height: 600px;
     grid-column: 2/4;
     display: grid;
     grid-template: 1fr / 3fr 1fr;
@@ -225,11 +225,25 @@ body {
 }
 .card-icons {
     display: flex;
+    flex-grow: 1;
+    gap: 20px;
     justify-content: end;
     align-items: end;
+
+}
+
+span.material-icons,
+span.material-symbols-outlined {
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    
 }
 
 /*Annoucements*/
+.announcements-trending {
+    margin-left: 20px;
+}
 .announcements-container {
     display: flex;
     flex-direction: column;
@@ -238,6 +252,7 @@ body {
     height: 365px;
     background-color: white;
     border-radius: 10px;
+    
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -257,7 +272,7 @@ body {
 }
 
 .main h3 {
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 700;
 }
 
@@ -269,17 +284,29 @@ body {
 .trending-container {
     padding: 20px;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 25px;
     width: 288px;
     background-color: white;
 }
 
-.announcements-trending img {
-    width: 50px;
-}
-
-.pics {
+.people {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
+
+.people img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.names {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.description {
+    font-weight: 100;
+    cursor: pointer;
+} 
